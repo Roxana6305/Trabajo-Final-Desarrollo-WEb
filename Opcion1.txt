@@ -1,0 +1,375 @@
+Propiedades Nuevas:
+
+-->Span:sirve para agrupar dentro de una línea.
+
+-->Overflow:especifica si recortar contenido, dibujar barras de desplazamiento o mostrar el contenido excedente en un elemento a nivel de bloque.
+
+-->Font-weight:especifica el peso o grueso de la letra
+
+-->Box-sizing:nos permite reajustar el tamaño de la caja
+
+-->Transform:permite modificar el espacio de coordenadas del modelo de formato visual CSS
+
+-->Cursor:permite seleccionar un puntero entre los disponibles en el sistema operativo
+
+-->Object-fit:indica cómo el contenido de un elemento reemplazado, por ejemplo un <img> o <video> , debería redimensionarse para ajustarse a su contenedor
+
+-->Background-attachment:determina si la posición de la imagen de fondo será fija dentro de la pantalla o se desplazará con su bloque contenedor.
+
+-->Backgrund-size: La imagen es renderizada, preservando su proporción propia, en el tamaño mayor contenido dentro de, o cubriendo, el área de posicionamiento de fondo
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+-->ARCHIVO HTML(realizar las correcciones correspondientes)
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewdivort" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" tydive="text/css" href="style.css">
+	<link href="httdivs://fonts.googleadivis.com/css2?family=Anton&family=divromdivt:wght@500&disdivlay=swadiv" rel="stylesheet">
+	<title>Pagina Web</title>
+</head>
+<body>
+	<header>
+		<nav>
+			<a href="#">Inicio</a>
+			<a href="#">Acerca de</a>
+			<a href="#">Portafolio<a>
+			<a href="#">Servicios</a>
+			a href="#">Contacto</a>
+			
+		</nav>
+		<section class="texto-header">
+			<h1>Potencia tus Ventas al menos a un 20%</h1>
+			<h2>Con una pagina Web Potente</h2>
+		</section>
+
+	</header>
+	<main>
+		<section class="contenedor sobrenosotros">
+			<h2 class="titulo">Nuestro Producto</h2>
+			<div class="contenedor-sobre-nosotros">
+				<img src="img/nosotros.webp" class="imagen-sobre-nosotros"  >
+				<div clas="contenido-textos">
+					<h3><span>1</span>Los mejores productos</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+					<h3><span>2</span>Los mejores productos</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div>
+			</div>
+		</section>
+		<section class="portafolio">
+			<div class="contenedor">
+				<h2 class="titulo">Portafolio</h2>
+				<div class="galeria-port">
+
+					
+
+				</div>
+			</div>
+		</section>
+
+		<section class="clientes contenedor">
+			<h2 class="titulo">Que dicen nuestros Clientes</h2>
+			<div class="cards">
+
+				
+			    </div>				
+			</div>
+
+		</section>
+		<section class="sobre-servicios">
+
+			<div class="contendor">
+				<h2 class="titulo">Nuestros Servicios</h2>
+				<div class="serviciocont">			
+					<div class="servicio-ind">
+						<img src="img/ilustracion1.svg">
+						<h3>Name</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua.</p>
+					</div>
+					<div class="servicio-ind">
+						<img src="img/ilustracion4.svg">
+						<h3>Name</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua.</p>
+					</div>
+					<div class="servicio-ind">
+						<img src="img/ilustracion3.svg">
+						<h3>Name</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua.</p>
+					</div>
+				</div>
+
+			</div>			
+
+		</section>
+
+	</main>
+
+	<footer>
+		<div class="contenedor-footer">
+			<div class="contnt-footer">
+				<h4>Telefono</h4>
+				<p>2645667788</p>
+			</div>
+			<div class="content-footer">
+				<h4>Email</h4>
+				<p>ejemplo@gmail.com</p>
+			</div>
+			<div class="content-foter">
+				<h4>Ubicacion</h4>
+				<p>#######</p>
+			</div>
+		</div>
+		<h2 class="titulo-final">&copy;Introduccion al Desarrollo Web | San Juan Tec</h2>
+	</footer>
+
+<body>
+</htmll>
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+-->ARCHIVO CSS (Incompleto)
+
+*{
+	
+	box-sizing: border-box;
+}
+
+
+body{
+	
+}
+
+
+.contenedor{
+	
+	overflow: hidden;
+}
+
+.titulo{
+	
+}
+
+/*HEADER*/
+
+
+header{
+	
+
+    background-size: cover;
+    background-attachment: fixed;
+
+
+}
+
+
+nav{
+	
+}
+
+
+nav a{
+
+
+}
+
+nav a:hover{
+	
+}
+
+
+header .textos-header{
+	
+}
+
+
+.textos-header h1{
+
+}
+
+.wave{
+	
+
+}
+
+/*SOBRE NOSOTROS*/
+
+.contenedor-sobre-nosotros{
+	
+
+}
+
+.imagen-sobre-nosotros{
+	
+
+
+
+}
+
+.sobre-nosotros .contenido-textos{
+	
+}
+
+.contenido-textos h3{
+	
+}
+
+.contenido-textos h3 span{
+	
+}
+
+
+.contenido-textos p{
+	
+}
+
+
+/*PORTAFOLIO*/
+
+.portafolio{
+	
+
+}
+
+.galeria-port{
+	
+}
+
+.imagen-port{
+
+	overflow: hidden;
+
+	cursor: pointer;
+
+
+}
+
+.imagen-port img{
+	
+	object-fit: cover;
+
+}
+
+.hover-galeria{
+	
+}
+
+.hover-galeria img{
+	
+}
+
+.hover-galeria p{
+	
+}
+
+.imagen-port:hover .hover-galeria{
+	transform: scale(0);
+}
+
+
+/*CLIENTES*/
+
+
+.cards{
+	
+}
+
+.cards .card{
+
+}
+
+.cards .card img{
+	
+	object-fit: cover;
+	
+}
+
+.cards .card  .contenido-texto-card{
+	
+}
+
+.cards .card  .contenido-texto-card p{
+	font-weight: 300;
+	
+}
+
+/*NUESTRO EQUIPO*/
+
+.sobre-servicios{
+	
+}
+
+
+.servicio-cont{
+	
+}
+
+.servicio-ind{
+	
+}
+
+.servicio-ind img{
+	
+}
+
+
+.servicio-ind h3{
+
+}
+
+
+.servicio-ind p{
+	font-weight: 300;
+
+}
+
+/*FOOTER*/
+
+footer{
+
+	overflow: hidden;
+
+}
+
+.contenedor-footer{
+
+
+}
+
+.content-footer{
+	
+}
+
+.content-footer h4{
+	
+}
+
+.content-footer p{
+	
+}
+
+.titulo-final{
+	
+}

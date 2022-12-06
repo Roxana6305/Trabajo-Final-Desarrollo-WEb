@@ -1,0 +1,29 @@
+*{
+	background: rgb(12, 240, 210);
+}
+
+h1{
+	color: rgb(46, 11, 78);
+	text-align: center;
+}
+
+.port{
+	width: 300px;
+	height: 250px;
+	margin: 5px;
+	position: relative;
+}
+
+.pagpri{
+	color: black;
+	text-align: justify;
+	font-size: larger;
+}
+
+.form{
+	text-align: center;
+	font-style: oblique;
+	font-size: larger;
+	border: 10px;
+	border-radius: 25px;
+}

@@ -1,0 +1,324 @@
+<!--HTML-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+	<title>Practica Final</title>
+</head>
+<body>
+	<header>
+		<nav class="navegacion">
+			<ul class="menu">
+				<li><a href="#">Inicio</a></li>
+				<li><a href="#">Nosotros</a></li>
+				<li><a href="#">Servicios</a>
+					<ul class="submenu">
+						<li><a href="#">Servicio1</a></li>
+						<li><a href="#">Servicio2</a></li>
+						<li><a href="#">Servicio3</a></li>
+					</ul>
+				</li>
+				<li><a href="contactos.html">Contacto</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<img src="https://cdn.pixabay.com/photo/2022/08/10/18/57/lake-7377942_960_720.jpg" alt="Paisaje">
+
+		<section>
+			<h1>Titulo Principal</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat.</p>
+		</section>
+	</main>
+	<aside>
+		<h2>Articulos Relacionados</h2>
+		<ul>
+			<li><a href="#">Lorem ipsum dolor sit amet</a></li>
+			<li><a href="#">Lorem ipsum dolor sit amet</a></li>
+			<li><a href="#">Lorem ipsum dolor sit amet</a></li>
+			<li><a href="#">Lorem ipsum dolor sit amet</a></li>
+			<li><a href="#">Lorem ipsum dolor sit amet</a></li>
+			<li><a href="#">Lorem ipsum dolor sit amet</a></li>
+			<li><a href="#">Lorem ipsum dolor sit amet</a></li>
+		</ul>
+	</aside>
+	<footer>
+		<p>Informacion adicional</p>
+		<p>Informacion adicional</p>
+	</footer>
+
+</body>
+</html>
+
+
+------------------------------------------------------------
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+	<title>Contacto</title>
+</head>
+<body>
+	
+	<div class="flex_container">
+		<form class="form">
+			<div>
+				<input type="email" name="" placeholder="Email" class="form_input">
+			</div>
+			<div>
+				<input type="text" name="" placeholder="Asunto" class="form_input">
+			</div>
+			<div>
+				<textarea placeholder="Escriba aqui su mensaje" class="form_input"></textarea>
+			</div>
+			<div>
+				<input type="submit"name="" class="form_input">
+			</div>
+			
+		</form>
+		<div class="form-img">
+			<div class="img-container">
+				<img src="https://cdn-icons-png.flaticon.com/512/95/95645.png">
+				
+			</div>
+			
+		</div>
+	</div>
+
+</body>
+</html>
+
+-----------------------------------------------------------
+
+
+/*-----CAMBIOS GENERALES-----*/
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: Arial, sans-serif;
+	background-color: #5499c7;
+	line-height: 1.6em;
+}
+
+main img{
+	/*margin-top: 80px;
+	margin-left: 10px;*/
+	max-width: 100%;
+}
+
+header{
+	width: 100%;	
+}
+
+main section{
+	padding: 30px;
+}
+
+main section p{
+	margin-bottom: 1em;
+	text-align: justify;
+}
+
+main section h1{
+	margin-bottom: 30px;
+}
+
+
+/*-----MENÚ DE NAVEGACION-----*/
+
+.navegacion{
+	margin: 10px;
+	background-color: #fff;
+	position: fixed;
+}
+
+.navegacion ul{
+	list-style: none;
+}
+
+.menu li{
+	position: relative;
+	display: inline-block;
+
+}
+
+.menu li a{
+	font-size: large;
+	font-family: Helvetica,sans-serif;
+	text-transform: uppercase;
+	display: inline-block;
+	padding: 15px 20px;
+	color: #353515;
+	text-decoration: none;
+}
+
+.menu li a:hover{
+	background-color: #999;
+	color: ghostwhite;
+	transition: all .9s;
+}
+
+.submenu{
+	position: absolute;
+	background-color: #555555;
+	width: 100%;
+	visibility:hidden;
+	opacity: 0;
+	transition: opacity 1.5s;
+}
+
+.submenu li a{
+	display: block;
+	padding: 10px;
+	padding-right: 20px;
+	width: 131%;
+	color: #fff;
+	text-transform: capitalize;
+}
+
+
+.menu li:hover .submenu{
+	visibility: visible;
+	opacity: 1;
+}
+
+.submenu li a:hover{
+	color: #90fff9;
+	background: linear-gradient(to top, transparent, #111);
+}
+
+
+/*-----BARRA LATERAL-----*/
+
+aside{
+	width: 27%;
+	position: absolute;
+	right: 0;
+	top: 0;
+	margin-top: 10px;
+	background-color: #90fff9;
+	padding: 30px;
+}
+
+aside ul li {
+	list-style: none;	
+	margin-bottom: 1em;
+	border-bottom: 1px solid;
+}
+
+aside ul li a{
+	text-decoration: none;
+	color: #111;
+}
+
+aside ul li a:hover{
+	color: #5499D9;
+	font-size: larger;
+}
+
+
+footer{
+	background-color: #666;
+	padding: 60px;
+}
+
+footer p{
+	text-align: center;
+	font-size: 2em;
+}
+
+
+/*----FORMULARIO----*/
+
+.flex_container{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	background-color: #777;
+	margin: 50px 30px;
+
+
+}
+
+.form{
+	text-align: left;
+	padding: 30px;
+	flex: 2;
+	order: 5;
+}
+
+.form_input{
+	width: 100%;
+	padding: 7px;
+	margin: 9px 0;
+	border: none;
+	border-bottom: 3px solid #90fff9;
+	background-color: transparent;
+	color: white;
+
+}
+
+.form_input:focus{
+	background: linear-gradient(to bottom, transparent, #333);
+	outline: none;
+}
+
+.form textarea{
+	min-height: 150px;
+	min-width: 170px;
+	resize: none;
+	
+}
+
+.form-img{
+	padding: 30px;
+	min-width: 200px;
+	max-width: 250px;
+	order: 2;
+}
+
+.img-container{
+	display: flex;
+	padding: 20px;
+	margin: auto;
+	border-radius: 50%;
+	background-color: #fff;
+
+
+}
+
+.form-img img{
+	width: 100%;
+	
+}
+
+::placeholder{
+    color:white;
